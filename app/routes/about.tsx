@@ -3,7 +3,7 @@ import { Welcome } from "../welcome/welcome";
 import { Link } from "react-router";
 
 // NOTE: This comment is to check if the code has been loaded properly
-console.log('Loaded "/home" page.')
+console.log('Loaded "/about" page.')
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -12,11 +12,11 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
+export default function About() {
   return (
     <>
-      <h1>Home</h1>
-      <Link to="/about">About</Link>
+      <h1>About</h1>
+      <Link to="/">Home</Link>
       <Welcome />
     </>
   );
